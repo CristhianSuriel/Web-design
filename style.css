@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  color: #2E5AAC;
+  font-weight: 300;
+  font-size: large;
+  background-color: transparent;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  border-left:5px solid #C7384C;
+  padding-left: 2px;
+  animation-name: underline;
+  animation-duration: 0.3s;
+}
+@keyframes underline {
+  from {border-left:5px solid #4172CC;}
+  to {border-left:5px solid #C7384C;}
+}
+.align {
+  margin: 50px auto 0px auto;
+  max-width: 1100px;
+}
+.flex {
+  display: flex;
+  height: 100%;
+}
+.grid {
+  display: grid;
+}
+
+.navbar {
+  /* border: 1px dashed red; */
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img {
+  height: 35px;
+  margin: 0 10px 0 10px;
+}
+.navbar ul {
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.bod1 {
+  /* border: 1px dashed green; */
+  grid-template-columns: repeat(5, auto);
+  /* grid-gap: 10px; */
+
+}
+.bod1 div {
+  /* border: 2px solid red; */
+}
+.bod1-item1 {
+  grid-row-start: span 3;
+  flex-basis: 100%;
+}
+.bod1-item1 img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+.bod1-item2 {
+  grid-column-start: span 4;
+  text-align: center;
+  align-self: flex-end;
+}
+.bod1-item2 h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.bod1-item3 {
+  grid-column-start: span 4;
+  text-align: center;
+  align-self: flex-start;
+}
+.bod1-item3 p {
+  color: black;
+}
+.bod1-item4 {
+  background-color: lightblue;
+}
+.bod1-item5 {
+  background-color: lightcoral;
+  
+}
+.bod1-item6 {
+  background-color: #B7D89D;
+  
+}
+.bod1-item7 {
+  background-color: #A7A8AB;
+
+}
+.bod1-click {
+  text-align: center;
+  align-self: flex-start;
+  margin-left: -50px;
+  margin-right: 55px;
+  border: 1px solid black;
+}
+.bod1-click h3 {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.bod1-click img {
+  height: 80px;
+  width: 80px;
+}
+
+.bod2 {
+  color: white;
+  height: 400px;
+  text-align: center;
+  gap: 5px;
+  grid-template-columns: auto auto;
+}
+.bod2 p, .bod2 h2 {
+  color: white;
+  /* border: 1px solid red; */
+  font-weight: bolder;
+}
+.bod2-item1 {
+  grid-column-start: span 2;
+  align-self: flex-end;
+  justify-self: start;
+  font-size: 40px;
+}
+.bod2-item3 {
+  overflow: auto;
+}
+
+.bod3 {
+  /* border: 1px solid red; */
+  text-align: center;
+  gap: 10px;
+  grid-template-columns: repeat(4, auto);
+}
+.bod3 p {
+  color: grey;
+}
+.bod3-item1 {
+  grid-column-start: span 4;
+  color: black;
+}
+.bod3-item2 {
+  grid-column-start: span 4;
+  margin-bottom: 50px;
+}
+.bod3 h2 {
+  /* border: 1px dashed blue; */
+  font-size: 35px;
+}
+.bod3-item3 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bod3-item4 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bod3-item3 img { height: 60px; width: 60px;}
+.bod3-item4 img {height: 65px; width: 60px;}
+.bod3 a {color: #C7384C;}
+
+.bod3-item5 {
+  grid-row: 3 / span 2;
+  grid-column: 3 /span 2;
+}
+.bod3-item6 img, .bod3-item7 img {
+  height: 300px;
+  width: 100%;
+}
+.bod3-item5 img {
+  width: 100%;
+  height: 500px;
+}
+
+.bod4 {
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(4, auto);
+  text-align: center;
+  gap: 20px;
+}
+.bod4 h3 {
+  font-weight: bold;
+}
+.bod4-item4 img, .bod4-item5 img, .bod4-item6 img{
+  height: 60px;
+  padding: 10px;
+}
+.bod4-item3 img {
+  height: 60px;
+}
+.bod4 div {
+  background-color: white;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.bod4 h2 {
+  color: white;
+  font-size: 30px;
+}
+.bod4-item1 {
+  padding-top: 100px;
+  grid-column-start: span 4;
+  align-self: end;
+}
+.bod4-item2 {
+  margin-bottom: 40px;
+  grid-column-start: span 4;
+  align-self: flex-start;
+}
+
+.bod5 {
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+}
+.bod5 h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.bod5 h3 {
+  font-weight: bold;
+}
+.bod5-item1 {
+  grid-column-start: span 3;
+  color: black;
+}
+.bod5-item2 {
+  grid-column-start: span 3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.bod5-item4 {
+  grid-row-start: span 3;
+  height: 100%;
+}
+.bod5-item3, .bod5-item6, .bod5-item8 {
+  text-align: end;
+}
+
+.footer {
+  grid-template-columns: repeat(3, auto);
+}
+.social-media {
+  margin-top: 20px;
+}
+.social-media img {
+  height: 30px;
+}
+@media (max-width: 560px) {
+  .bod1-click {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
